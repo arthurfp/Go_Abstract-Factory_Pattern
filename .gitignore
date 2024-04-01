@@ -1,0 +1,14 @@
+# Binaries
+/bin/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS files
+.DS_Store
+
+# Editor directories
+.vscode/
+.idea/
