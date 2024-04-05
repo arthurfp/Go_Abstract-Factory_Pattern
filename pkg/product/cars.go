@@ -14,3 +14,11 @@ type ClassicCar struct{}
 func (c *ClassicCar) Drive() {
 	fmt.Println("Driving a classic car.")
 }
+
+// ModernCar is a concrete product that implements Car.
+type ModernCar struct{}
+
+// Drive allows you to pretend to drive the ModernCar.
+func (c *ModernCar) Drive() {
+	fmt.Println("Driving a modern car.")
+}

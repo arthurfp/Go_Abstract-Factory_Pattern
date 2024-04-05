@@ -11,11 +11,18 @@ func main() {
 	// Create a ClassicToyFactory
 	classicFactory := factory.ClassicToyFactory{}
 
-	// Create a Doll using the ClassicToyFactory
+	// Create and use a Doll and Car from ClassicToyFactory
 	doll := classicFactory.NewDoll()
 	doll.PlayWith()
-
-	// Create a Car using the ClassicToyFactory
 	car := classicFactory.NewCar()
 	car.Drive()
+
+	// Create a ModernToyFactory
+	modernFactory := factory.ModernToyFactory{}
+
+	// Create and use a Doll and Car from ModernToyFactory
+	modernDoll := modernFactory.NewDoll()
+	modernDoll.PlayWith()
+	modernCar := modernFactory.NewCar()
+	modernCar.Drive()
 }
