@@ -2,15 +2,15 @@ package factory
 
 import "abstract-factory-go/pkg/product"
 
-// ClassicToyFactory is a concrete factory that produces classic toys.
+// ClassicToyFactory produces toys with a traditional design.
 type ClassicToyFactory struct{}
 
-// NewDoll returns a new instance of a ClassicDoll.
+// NewDoll creates a doll in the classic style.
 func (f *ClassicToyFactory) NewDoll() product.Doll {
 	return &product.ClassicDoll{}
 }
 
-// NewCar returns a new instance of a ClassicCar.
+// NewCar creates a car reminiscent of vintage models.
 func (f *ClassicToyFactory) NewCar() product.Car {
 	return &product.ClassicCar{}
 }
